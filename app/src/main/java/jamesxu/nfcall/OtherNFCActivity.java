@@ -17,6 +17,7 @@ public class OtherNFCActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secend);
         cardTextView = (TextView) findViewById(R.id.nfc_textview);
+        ((TextView) findViewById(R.id.nfc_title)).setText("选择手机中其他应用处理NFC响应");
     }
 
     /**
@@ -25,7 +26,7 @@ public class OtherNFCActivity extends BaseActivity {
      *
      * @param event
      */
-    public void onMainThreadEvent(final GetNFCCardEvent event) {
+    public void onEventMainThread(final GetNFCCardEvent event) {
         cardTextView.setText(event.getCard());
     }
 

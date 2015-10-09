@@ -6,9 +6,6 @@ import android.os.Bundle;
 
 import de.greenrobot.event.EventBus;
 
-/**
- * Created by james on 29/6/15.
- */
 public class BaseActivity extends Activity {
     protected Activity activity;
     protected EventBus eventBus;

@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/nfc_title"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -18,6 +20,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
+        tools:text="1231231"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="25sp" />
 </LinearLayout>

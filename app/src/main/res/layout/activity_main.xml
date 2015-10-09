@@ -30,4 +30,4 @@
         android:text="默认选择本应用NFC读取"
         android:textColor="@android:color/white" />
 
-</>
+</LinearLayout>

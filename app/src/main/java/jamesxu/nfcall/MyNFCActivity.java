@@ -22,11 +22,13 @@ public class MyNFCActivity extends BaseActivity {
 
     private TextView cardTextView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secend);
         cardTextView = (TextView) findViewById(R.id.nfc_textview);
+        ((TextView) findViewById(R.id.nfc_title)).setText("本Activity处理NFC响应");
         initNFC();
     }
 
@@ -63,7 +65,7 @@ public class MyNFCActivity extends BaseActivity {
      *
      * @param event
      */
-    public void onMainThreadEvent(final GetNFCCardEvent event) {
+    public void onEventMainThread(final GetNFCCardEvent event) {
         cardTextView.setText(event.getCard());
     }
 
