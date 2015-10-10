@@ -9,16 +9,19 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        findViewById(R.id.to_startOtherNfcActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(OtherNFCActivity.class);
+            }
+        });
+
+        findViewById(R.id.to_startMyNfcActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(MyNFCActivity.class);
+            }
+        });
     }
-
-
-    public void startOtherNfcActivity(View view) {
-        startActivity(OtherNFCActivity.class);
-    }
-
-    public void startMyNfcActivity(View view) {
-        startActivity(MyNFCActivity.class);
-    }
-
-
 }

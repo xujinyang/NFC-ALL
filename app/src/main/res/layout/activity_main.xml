@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:onClick="startOtherNfcActivity"
+        android:id="@+id/to_startOtherNfcActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_orange_dark"
@@ -20,7 +20,7 @@
         android:textColor="@android:color/white" />
 
     <TextView
-        android:onClick="startMyNfcActivity"
+        android:id="@+id/to_startMyNfcActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
